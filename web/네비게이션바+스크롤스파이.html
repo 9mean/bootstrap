@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>네비게이션바+스크롤스파이</title>
+  <!-- 합쳐지고 최소화된 최신 CSS -->
+  <!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<style media="screen">
+  .navbar-brand img{
+    width: 60px;
+    height: 30px;
+  }
+  .container-fluid .row p{
+    font-size:2em;
+  }
+body { padding-top: 70px;
+   position: relative;
+ }
+</style>
+</head>
+<body data-spy="scroll" data-target=".navbar-example">
+  <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"> <img alt="Brand" src="../gumhouseclass/img/sushi.jpg"></a>
+        <p class="navbar-text"><a href="#" class="navbar-link">Sushiㅁ ㅏㅅ ㅈ ㅣ ㅂ</a></p>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-example" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#book">디자인북작업 <span class="sr-only">(current)</span></a></li>
+          <li><a href="#video">동영상작업</a></li>
+          <li><a href="#web">웹페이지작업</a></li>
+          <li><a href="#ad">광고이미지작업</a></li>
+          <!--<li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>-->
+        </ul>
+        <form class="navbar-form navbar-right" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <!--<ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Link</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>-->
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <div class="container-fluid">
+    <div class="row" id="book">
+      <div class="col-sm-4"><p>디자인북작업 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum minus, optio veritatis. Dignissimos architecto beatae aperiam delectus sequi blanditiis, possimus animi quae hic culpa quo quisquam ut id fugiat excepturi.</p></div>
+      <div class="col-sm-4"><p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione est ipsum molestias, odio molestiae dolorem officia doloremque corporis nobis architecto tempore ipsam incidunt, excepturi suscipit veniam libero mollitia, voluptates beatae!</p></div>
+      <div class="col-sm-4"><p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam dicta velit impedit nobis, fugiat, debitis hic quibusdam id esse saepe! Numquam dolor itaque corporis commodi expedita et incidunt beatae officiis?</p></div>
+    </div>
+    <div class="row" id="video">
+      <div class="col-sm-4"><p>동영상작업 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ea nesciunt ipsum dolore alias culpa, nisi ab omnis eos quia maiores necessitatibus, accusantium? Molestias magni fugit, accusantium quae culpa, soluta.</p></div>
+      <div class="col-sm-4"><p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nisi ad sint, ut impedit harum iusto est, repellendus quibusdam incidunt voluptate magnam ex quis et porro numquam, facere dolore adipisci.</p></div>
+      <div class="col-sm-4"><p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima hic eius sequi nam, molestiae magni suscipit ut deleniti architecto veniam. Natus expedita minima molestiae dolorum, nisi error voluptatum ad eaque!</p></div>
+    </div>
+    <div class="row" id="web">
+      <div class="col-sm-4"><p>웹페이지작업 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quasi doloremque velit nemo accusantium enim vero expedita fuga nihil dolorum architecto sit consectetur, laudantium dolores eaque, dolore at ducimus adipisci.</p></div>
+      <div class="col-sm-4"><p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis eos perferendis qui est quaerat obcaecati voluptates illo nisi delectus, temporibus atque minima laborum commodi impedit harum quam vero, repellat vitae.</p></div>
+      <div class="col-sm-4"><p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae a ipsum eius quas cupiditate laborum laboriosam ullam tempora enim vel, est facilis non accusantium voluptatum! Hic maxime earum, provident voluptatibus.</p></div>
+    </div>
+    <div class="row" id="ad">
+      <div class="col-sm-4"><p>광고이미지작업 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque facilis modi perferendis optio voluptatum dolor laudantium ab nam iusto voluptatibus ea iste mollitia magni, id eveniet sit atque dolore molestias?</p></div>
+      <div class="col-sm-4"><p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus nostrum, doloribus iste quo corporis consequatur quod, omnis sed dignissimos facilis dolore similique eos ea minima consequuntur sunt eveniet ipsum vero.</p></div>
+      <div class="col-sm-4"><p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dolorem totam ipsam aut, unde nam veniam omnis, quia recusandae maxime molestiae odio non, vel delectus excepturi magni architecto expedita quidem?</p></div>
+    </div>
+  </div>
+</body>
+</html>

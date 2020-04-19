@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>부트스트랩이미지실습</title>
+  <!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<style media="screen">
+    div{border:1px solid red;}
+    #img1{
+      background-image:url(../gumhouseclass/img/sushi.jpg);
+      height:960px;
+      background-size:contain;
+      background-repeat:no-repeat;
+    }
+    #img2{
+      background-image:url(../gumhouseclass/img/sushi.jpg);
+      height:960px;
+      background-size:contain;
+      background-repeat:no-repeat;
+    }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <img src="../gumhouseclass/img/sushi.jpg" alt="" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-6">
+        <img src="../gumhouseclass/img/sushi.jpg" alt="" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-6">
+        <img src="../gumhouseclass/img/sushi.jpg" alt="" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-6">
+        <img src="../gumhouseclass/img/sushi.jpg" alt="" class="img-responsive"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 img-responsive" id="img1"></div>
+      <div class="col-sm-6 img-responsive" id="img2"></div>
+    </div>
+  </div>
+</html>
